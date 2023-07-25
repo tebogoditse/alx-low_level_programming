@@ -9,10 +9,10 @@ int	_atoi(char *s)
 	found = 1;
 	while (*str == ' ' || *str == '\n' || *str == '\t' || *str == '\f' || *str == '\r')
 		str++;
-	if (str[i] == '-')
+	if (*str == '-')
 		sign = -1;
 	if (*str == '-' || *str == '+')
-		i++;
+		str++;
 	while (*str && found)
 	{
 		if (*str > '-1' && *str < '10')
