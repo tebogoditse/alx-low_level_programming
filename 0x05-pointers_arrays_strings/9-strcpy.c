@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * *_strcpy - copies the string
+ * @dest: pointer to where we copy the string
+ * @src: the string to be copied
+ * Return: pointer to dest
+ */
+
 char	*_strcpy(char *dest, char *src)
 {
 	int i, len;

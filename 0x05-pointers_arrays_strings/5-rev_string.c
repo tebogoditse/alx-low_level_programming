@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * rev_string - reverses the input string
+ * @s: the string parameter
+ */
+
 void	rev_string(char *s)
 {
 	int i, j;
