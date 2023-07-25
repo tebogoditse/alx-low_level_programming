@@ -1,5 +1,7 @@
 #include "main.h"
 #include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
@@ -19,7 +21,7 @@ int	main(void)
 		{
 			n = 2772 - sum - '0';
 			sum = sum + n;
-			_putchar(m + '0');
+			_putchar(n + '0');
 			break;
 		}
 		i++;
