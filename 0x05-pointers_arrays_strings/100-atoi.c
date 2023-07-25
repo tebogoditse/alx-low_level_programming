@@ -2,8 +2,9 @@
 
 int	_atoi(char *s)
 {
-	int sum, found, sign;
+	int i, sum, found, sign;
 
+	i = 0;
 	sum = 0;
 	sign = 1;
 	found = 1;
