@@ -15,7 +15,7 @@ int	_atoi(char *s)
 		s++;
 	while (*s && found)
 	{
-		if (*s > '-1' && *s < '10')
+		if (*s >= '0' && *s <= '9')
 			sum = sum * 10 + *s - '0';
 		else
 			found = 0;
