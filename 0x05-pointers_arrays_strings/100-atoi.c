@@ -2,25 +2,24 @@
 
 int	_atoi(char *s)
 {
-	int i, sum, found, sign;
+	int sum, found, sign;
 
-	i = 0;
 	sum = 0;
 	sign = 1;
 	found = 1;
-	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '\f' || str[i] == '\r')
-		i++;
+	while (*str == ' ' || *str == '\n' || *str == '\t' || *str == '\f' || *str == '\r')
+		str++;
 	if (str[i] == '-')
 		sign = -1;
-	if (str[i] == '-' || str[i] == '+')
+	if (*str == '-' || *str == '+')
 		i++;
-	while (str[i] && found)
+	while (*str && found)
 	{
-		if (str[i] > '-1' && str[i] < '10')
+		if (*str > '-1' && *str < '10')
 			sum = sum * 10 + *str - '0';
 		else
 			found = 0;
-		i++;
+		str++;
 	}
 	return (sign * sum);
 }
