@@ -7,19 +7,19 @@ int	_atoi(char *s)
 	sum = 0;
 	sign = 1;
 	found = 1;
-	while (*str == ' ' || *str == '\n' || *str == '\t' || *str == '\f' || *str == '\r')
-		str++;
-	if (*str == '-')
+	while (*s == ' ' || *s == '\n' || *s == '\t' || *s == '\f' || *s == '\r')
+		s++;
+	if (*s == '-')
 		sign = -1;
-	if (*str == '-' || *str == '+')
-		str++;
-	while (*str && found)
+	if (*s == '-' || *s == '+')
+		s++;
+	while (*s && found)
 	{
-		if (*str > '-1' && *str < '10')
-			sum = sum * 10 + *str - '0';
+		if (*s > '-1' && *s < '10')
+			sum = sum * 10 + *s - '0';
 		else
 			found = 0;
-		str++;
+		s++;
 	}
 	return (sign * sum);
 }
