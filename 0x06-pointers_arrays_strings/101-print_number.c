@@ -8,18 +8,22 @@
 
 void	print_number(int n)
 {
-	unsigned int n1;
-
+	if (n == -2147483648)
+	{
+		_putchar('-');
+		_putchar('2');
+		nb = 147483648;
+	}
 	if (n < 0)
 	{
 		_putchar('-');
-		n1 = -n;
+		n1 = nb * -1;
 	}
-	if (n1 > 9)
+	if (n > 9)
 	{
-		_putchar(n1 / 10);
-		n1 = n1 % 10;
+		_putchar(n / 10);
+		_putchar(n % 10);
 	}
-	if (n1 < 10)
-		_putchar((n1 % 10) + 48);
+	else
+		_putchar(n + 48);
 }
