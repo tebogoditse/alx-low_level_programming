@@ -7,17 +7,13 @@ char	*rot13(char *s)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] >= 'a' && s[i] <= 'z')
+		if ((str[i] >= 'a' && str[i] <= 'm') || (str[i] >= 'A' && str[i] <= 'M'))
 		{
-			s[i] = s[i] + 13;
-			if (s[i] > 'z')
-				s[i] = s[i] - 26;
+			str[i] = str[i] + 13;
 		}
-		else if (s[i] >= 'A' && s[i] <= 'Z')
+		if ((str[i] >= 'n' && str[i] <= 'z') && (str[i] >= 'N' && str[i] <= 'Z'))
 		{
-			s[i] = s[i] + 13;
-			if (s[i] > 'Z')
-				s[i] = s[i] - 26;
+			str[i] = str[i] - 13;
 		}
 		i++;
 	}
