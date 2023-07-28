@@ -4,7 +4,7 @@ char	*cap_string(char *s)
 {
 	int i, j;
 
-	char s_chars = {' ', '\t', ',', ';', '.', '!', '?',
+	char s_chars[13] = {' ', '\t', ',', ';', '.', '!', '?',
 		'"', '(', ')', '{', '}', '\n'};
 	i = 0;
 	while (s[i] != '\0')
