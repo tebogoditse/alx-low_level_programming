@@ -10,8 +10,6 @@ void	print_number(int n)
 {
 	unsigned int n1;
 
-	n1 = n;
-
 	if (n < 0)
 	{
 		_putchar('-');
@@ -23,5 +21,5 @@ void	print_number(int n)
 		n1 = n1 % 10;
 	}
 	if (n1 < 10)
-		_putchar(n1 + 48);
+		_putchar((n1 % 10) + 48);
 }
