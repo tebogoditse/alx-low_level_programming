@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * *_strncat - concatenates strings to n characters
+ * @dest: destination
+ * @src: source
+ * @n: n characters
+ * Return: destination
+ */
+
 char	*_strncat(char *dest, char *src, int n)
 {
 	int i, j;

@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * *leet - encodes the string
+ * @s: string argument
+ * Return: encoded string
+ */
+
 char	*leet(char *s)
 {
 	int i, j;

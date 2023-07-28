@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * *string_toupper - capitalizes the string
+ * @s: string argument
+ * Return: capitalized string
+ */
+
 char	*string_toupper(char *s)
 {
 	int i;

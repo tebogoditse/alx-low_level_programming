@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * reverse_array - reverses the arr to n characters
+ * @a: array
+ * @n: n characters
+ * Return: void
+ */
+
 void	reverse_array(int *a, int n)
 {
 	int i, temp;
