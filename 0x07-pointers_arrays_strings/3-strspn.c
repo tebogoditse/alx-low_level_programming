@@ -16,7 +16,7 @@ int	check(char c, char *charset)
 
 unsigned int	_strspn(char *s, char *accept)
 {
-	unsigned int	i, n;
+	unsigned int	i;
 
 	i = 0;
 
