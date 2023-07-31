@@ -1,5 +1,15 @@
 #include "main.h"
 
+/**
+ * *_strstr - finds the first occurrence of the substring 'needle'
+ * in the string 'haystack'
+ * @haystack: main string to be scanned
+ * @needle: substring to be searched in the main string
+ * Return: returns a pointer to the first occurrence in haystack
+ * of any of the entire sequence of characters specified in needle,
+ * or a null pointer if the sequence is not present in haystack.
+ */
+
 char	*_strstr(char *haystack, char *needle)
 {
 	int	i, j;
