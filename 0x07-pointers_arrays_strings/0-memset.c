@@ -1,6 +1,6 @@
 #include "main.h"
 
-void	*ft_memset(char *dest, char src, unsigned int n)
+char	*_memset(char *dest, char src, unsigned int n)
 {
 	unsigned int	i;
 
