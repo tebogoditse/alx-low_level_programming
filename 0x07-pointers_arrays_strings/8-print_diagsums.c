@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * print_diagsums - prints the sum of two diagonals
+ * @a: char value
+ * @size: int value
+ * Return: void function
+ */
+
 void	print_diagsums(int *a, int size)
 {
 	int	i, j, sum1, sum2, k, l;
