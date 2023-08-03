@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 int	_sqrt(int n, int y)
 {
