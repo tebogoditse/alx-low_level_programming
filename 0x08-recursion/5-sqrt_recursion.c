@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * _sqrt - returns square root
+ * @n: number
+ * @y: square root
+ * Return: square root
+ */
+
 int	_sqrt(int n, int y)
 {
 	if (n > y / 2)
@@ -8,6 +15,12 @@ int	_sqrt(int n, int y)
 		return (n);
 	return (_sqrt(n + 1, y));
 }
+
+/**
+ * _sqrt_recursion - returns square root using recursion
+ * @n: number
+ * Return: returns the square root
+ */
 
 int	_sqrt_recursion(int n)
 {
