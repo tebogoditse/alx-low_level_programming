@@ -74,11 +74,6 @@ int	main(int argc, char **argv)
 	i = 1;
 	sum = 0;
 
-	if (argc < 2)
-	{
-		ft_putstr("0\n");
-		return (0);
-	}
 	while (i <= argc - 1)
 	{
 		number = strtol(argv[i], &flag, 10);
@@ -96,4 +91,4 @@ int	main(int argc, char **argv)
 	ft_putnbr(sum);
 	ft_putchar('\n');
 	return (0);
-}
+} 
