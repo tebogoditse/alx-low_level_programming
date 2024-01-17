@@ -69,6 +69,7 @@ int	main(int argc, char **argv)
 	int	i;
 	int	number;
 	int	sum;
+	char	*flag;
 
 	i = 1;
 	sum = 0;
@@ -78,16 +79,15 @@ int	main(int argc, char **argv)
 		ft_putstr("0\n");
 		return (0);
 	}
-
 	while (i <= argc - 1)
 	{
-		number = atoi(argv[i]);
-		if (!number)
+		number = strtol(argv[i], &flag, 10);
+		if (*flag)
 		{
 			ft_putstr("Error\n");
 			return (1);
 		}
-		if (number >= 0)
+		else if (number >= 0)
 		{
 			sum = sum + number;
 		}
