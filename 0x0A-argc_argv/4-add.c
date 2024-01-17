@@ -79,7 +79,7 @@ int	main(int argc, char **argv)
 		if (!number)
 		{
 			ft_putstr("Error\n");
-			return (1);
+			return (0);
 		}
 		if (number > 0)
 		{
