@@ -73,15 +73,21 @@ int	main(int argc, char **argv)
 	i = 1;
 	sum = 0;
 
-	while (i < argc)
+	if (argc < 2)
+	{
+		ft_putstr("0\n");
+		return (0);
+	}
+
+	while (i <= argc - 1)
 	{
 		number = atoi(argv[i]);
 		if (!number)
 		{
 			ft_putstr("Error\n");
-			return (0);
+			return (1);
 		}
-		if (number > 0)
+		if (number >= 0)
 		{
 			sum = sum + number;
 		}
