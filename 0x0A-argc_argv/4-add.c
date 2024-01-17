@@ -91,4 +91,4 @@ int	main(int argc, char **argv)
 	ft_putnbr(sum);
 	ft_putchar('\n');
 	return (0);
-} 
+}
