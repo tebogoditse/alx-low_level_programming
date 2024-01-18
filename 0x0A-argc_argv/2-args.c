@@ -1,4 +1,31 @@
-#include <stdio.h>
+#include <unistd.h>
+
+/**
+ * ft_putchar - prints a single string
+ * @c: character to print
+ * Return: no return
+ */
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+/**
+ * ft_putstr - prints a string
+ * @str: prints a string
+ * Return: no return
+ */
+void	ft_putstr(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+}
 
 /**
  * main - prints all the arguments in a new line
@@ -14,7 +41,8 @@ int	main(int argc, char **argv)
 	i = 0;
 	while (i <= argc - 1)
 	{
-		printf("%s\n", argv[i]);
+		ft_putstr(argv[i]);
+		ft_putchar('\n');
 		i++;
 	}
 
