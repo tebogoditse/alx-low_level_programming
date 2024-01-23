@@ -28,9 +28,8 @@ void	ft_putstr(char *str)
 }
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * main - prints the name of the file it was compiled from, then newline
+ * Return: 0
  */
 int main(void)
 {
