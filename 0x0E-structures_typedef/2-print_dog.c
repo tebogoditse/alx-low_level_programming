@@ -1,6 +1,11 @@
 #include "dog.h"
 #include <stdio.h>
 
+/**
+ * print_dog - prints dog info
+ * @d: ponter of type struct dog
+ */
+
 void	print_dog(struct dog *d)
 {
 	if (!d)
